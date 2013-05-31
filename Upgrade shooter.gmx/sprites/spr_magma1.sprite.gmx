@@ -2,25 +2,25 @@
 <sprite>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
+  <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>55</bbox_right>
-  <bbox_top>3</bbox_top>
-  <bbox_bottom>44</bbox_bottom>
+  <bbox_left>1</bbox_left>
+  <bbox_right>47</bbox_right>
+  <bbox_top>5</bbox_top>
+  <bbox_bottom>30</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>56</width>
-  <height>48</height>
+  <width>50</width>
+  <height>32</height>
   <frames>
-    <frame index="0">images\spr_shootable2_0.png</frame>
-    <frame index="1">images\spr_shootable2_1.png</frame>
-    <frame index="2">images\spr_shootable2_2.png</frame>
+    <frame index="0">images\spr_magma1_0.png</frame>
+    <frame index="1">images\spr_magma1_1.png</frame>
+    <frame index="2">images\spr_magma1_2.png</frame>
   </frames>
 </sprite>

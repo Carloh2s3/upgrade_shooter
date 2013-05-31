@@ -15,12 +15,6 @@
     <sprite>sprites\spr_points</sprite>
     <sprite>sprites\spr_lives</sprite>
     <sprites name="enemies">
-      <sprite>sprites\spr_shootable1</sprite>
-      <sprite>sprites\spr_shootable2</sprite>
-      <sprite>sprites\spr_shootable3</sprite>
-      <sprite>sprites\spr_shootable4</sprite>
-      <sprite>sprites\spr_shootable5</sprite>
-      <sprite>sprites\spr_shootable6</sprite>
       <sprites name="stuctures">
         <sprite>sprites\spr_tower</sprite>
         <sprite>sprites\spr_tower1</sprite>
@@ -30,6 +24,18 @@
         <sprite>sprites\spr_bullet</sprite>
         <sprite>sprites\spr_laser</sprite>
         <sprite>sprites\spr_blast_turret</sprite>
+        <sprite>sprites\spr_firebolt</sprite>
+      </sprites>
+      <sprites name="level1">
+        <sprite>sprites\spr_shootable1</sprite>
+        <sprite>sprites\spr_shootable2</sprite>
+        <sprite>sprites\spr_shootable3</sprite>
+        <sprite>sprites\spr_shootable4</sprite>
+        <sprite>sprites\spr_shootable5</sprite>
+        <sprite>sprites\spr_shootable6</sprite>
+      </sprites>
+      <sprites name="level2">
+        <sprite>sprites\spr_magma1</sprite>
       </sprites>
     </sprites>
     <sprites name="buttons">
