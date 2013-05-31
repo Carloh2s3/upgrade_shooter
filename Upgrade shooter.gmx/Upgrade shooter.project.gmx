@@ -62,6 +62,9 @@
     <sprite>sprites\spr_CF_clouds</sprite>
     <sprite>sprites\spr_text_settings</sprite>
     <sprite>sprites\spr_text_mark</sprite>
+    <sprite>sprites\spr_efMagmaSplatter</sprite>
+    <sprite>sprites\spr_efBrimmingFire</sprite>
+    <sprite>sprites\spr_warningSign</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -147,6 +150,7 @@
       <object>objects\obj_button_lv2</object>
       <object>objects\obj_button_lv3</object>
       <object>objects\obj_button_lv4</object>
+      <object>objects\obj_button_lv5</object>
       <object>objects\obj_cursor</object>
       <object>objects\obj_cursor_mousepos</object>
     </objects>
