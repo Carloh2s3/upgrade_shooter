@@ -8,70 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>cheat = 0;
-if room = room_devtest {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-if room = room_devtest2 {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-if room = room_devtest3 {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-else exit;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if x &gt;= room_width-50{
-    if room = room_devtest and global.levelprogress &lt; 1 global.levelprogress = 1;
-    if room = room_devtest2 and global.levelprogress &lt; 2 global.levelprogress = 2;
-    if room = room_devtest3 and global.levelprogress &lt; 3 global.levelprogress = 3;
-    room_goto(room_levels);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="5" enumb="113">
       <action>
         <libid>1</libid>
@@ -138,19 +74,6 @@ if cheat = "superspeed" global.speedmode = 2;
             <string>draw_set_font(font0);
 draw_text(view_xview+200,view_yview+10,"points:");
 draw_text(view_xview+280,view_yview+10,global.money);
-
-var drawX, drawY;
-
-drawX = view_xview[0];
-drawY = view_yview[0];
-if global.special &gt; 0{
-    draw_sprite(spr_special_bar,0,view_xview[0]+153,view_yview[0]+425)
-    draw_rectangle(view_xview[0]+200,view_yview[0]+436,view_xview[0]+200+obj_player.special,view_yview[0]+459,0)
-}
-for (i = 0; i &lt; lives; i += 1) {
-    draw_sprite(spr_lives, 0, drawX+5, drawY+443);
-    drawX += 16;
-}
 </string>
           </argument>
         </arguments>

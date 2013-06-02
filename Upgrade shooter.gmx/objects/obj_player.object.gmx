@@ -33,6 +33,7 @@ dir = 0;
 dis = 0;
 lives = global.morelives;
 invincible = 1;
+special = 100;
 </string>
           </argument>
         </arguments>
@@ -126,6 +127,7 @@ if invincible = 1{
 if invincible = 0{
     visible = 1;
 }
+if global.special &gt; 0 and special &lt; 100 special += 1;
 </string>
           </argument>
         </arguments>

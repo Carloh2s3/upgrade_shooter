@@ -65,6 +65,8 @@
     <sprite>sprites\spr_efMagmaSplatter</sprite>
     <sprite>sprites\spr_efBrimmingFire</sprite>
     <sprite>sprites\spr_warningSign</sprite>
+    <sprite>sprites\spr_special</sprite>
+    <sprite>sprites\spr_special_bar</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -117,6 +119,7 @@
     <object>objects\obj_upMovespeed</object>
     <object>objects\obj_upMorelives</object>
     <object>objects\obj_upBackfire</object>
+    <object>objects\obj_upSpecial</object>
     <objects name="buttons">
       <object>objects\obj_buttonGo</object>
       <object>objects\obj_buttonShop</object>
@@ -129,6 +132,7 @@
       <object>objects\obj_buttonScreen</object>
     </objects>
     <object>objects\obj_controller</object>
+    <object>objects\obj_displayMoney</object>
     <object>objects\obj_laser</object>
     <object>objects\obj_blast_turret</object>
     <object>objects\obj_bullet</object>
