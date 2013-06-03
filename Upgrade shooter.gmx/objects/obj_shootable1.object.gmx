@@ -80,7 +80,7 @@ repeat(2) instance_create(x,y,obj_points)
             <kind>1</kind>
             <string>ID = instance_create(x-22,y+12,obj_bullet)
 with ID {direction = 180; speed = 6+global.difficulty};
-alarm[0] = 60-(global.difficulty*4);
+alarm[0] = 90-(global.difficulty*5);
 varset = 1;
 </string>
           </argument>

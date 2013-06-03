@@ -52,6 +52,7 @@
     if lives &gt; 0 {
         lives -= 1;
         other.invincible = 1;
+        other.special += 50;
     } else {
         room_goto(room_main);
     }

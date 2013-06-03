@@ -32,6 +32,7 @@ mousepos_y = y;
 newmousepos_x = 0;
 newmousepos_y = 0;
 created = 0;
+
 </string>
           </argument>
         </arguments>
@@ -110,14 +111,16 @@ mousepos_y = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if created = 0{
-    created = 1;
-    instance_create(mouse_x,mouse_y,obj_cursor_mousepos);
-    instance_create(mouse_x,mouse_y,obj_cursor);
-    mousepos_x = mouse_x;
-    mousepos_y = mouse_y;
+            <string>if global.menumode = 0{
+    if created = 0{
+        created = 1;
+        instance_create(mouse_x,mouse_y,obj_cursor_mousepos);
+        instance_create(mouse_x,mouse_y,obj_cursor);
+        mousepos_x = mouse_x;
+        mousepos_y = mouse_y;
+    }
+    y += (mousepos_y-mouse_y)/10;
 }
-y += (mousepos_y-mouse_y)/10;
 </string>
           </argument>
         </arguments>
@@ -141,7 +144,14 @@ y += (mousepos_y-mouse_y)/10;
           <argument>
             <kind>1</kind>
             <string>if mousepos_x = mouse_x and mousepos_y = mouse_y{
-    room_goto(room_devtest);
+    if global.menumode = 0{
+        global.menumode = 1;
+        obj_button_lv1.y = 10;
+        instance_create(x,y,obj_levelMap);
+    } else {
+        global.menumode = 0;
+        with obj_levelMap instance_destroy();
+    }
 }
 </string>
           </argument>

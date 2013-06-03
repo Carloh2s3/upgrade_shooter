@@ -54,13 +54,14 @@ global.bmulti = 1.5;
 global.cmultiplus = 0.1;
 
 global.money = 0;
-global.levelprogress = 0;
+global.levelprogress = 5;
 global.difficulty = 2;
 global.totalspent = 0;
 
 global.normalspeed = 2;
 global.superspeed = 10;
 global.speedmode = 1;
+global.menumode = 0;
 
 alarm[0] = 2;
 </string>

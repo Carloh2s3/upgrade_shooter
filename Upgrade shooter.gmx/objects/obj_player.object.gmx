@@ -34,7 +34,7 @@ dis = 0;
 lives = global.morelives;
 invincible = 1;
 special = 100;
-alarm[2] = 30;
+alarm[2] = 20-(global.special*1.5);
 </string>
           </argument>
         </arguments>
@@ -58,7 +58,7 @@ alarm[2] = 30;
           <argument>
             <kind>1</kind>
             <string>if global.special &gt; 0 and special &lt; 100 special += 1;
-alarm[2] = 30-(global.special*2);
+alarm[2] = 30-(global.special*2.5);
 </string>
           </argument>
         </arguments>

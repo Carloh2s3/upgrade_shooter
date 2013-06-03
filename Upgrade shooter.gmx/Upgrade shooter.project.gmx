@@ -67,7 +67,8 @@
     <sprite>sprites\spr_warningSign</sprite>
     <sprite>sprites\spr_special</sprite>
     <sprite>sprites\spr_special_bar</sprite>
-    <sprite>sprites\sprite47</sprite>
+    <sprite>sprites\spr_levelMap</sprite>
+    <sprite>sprites\spr_buttonLevelMap</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -161,11 +162,14 @@
     </objects>
     <object>objects\obj_text_settings</object>
     <object>objects\obj_special</object>
+    <object>objects\obj_levelMap</object>
+    <object>objects\obj_buttonLevelMap</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>
     <room>rooms\room_main</room>
     <room>rooms\room_devtest</room>
+    <room>rooms\room_W1lv2</room>
     <room>rooms\room_devtest2</room>
     <room>rooms\room_devtest3</room>
     <room>rooms\room_shop</room>
