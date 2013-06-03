@@ -34,6 +34,31 @@ dis = 0;
 lives = global.morelives;
 invincible = 1;
 special = 100;
+alarm[2] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.special &gt; 0 and special &lt; 100 special += 1;
+alarm[2] = 30-(global.special*2);
 </string>
           </argument>
         </arguments>
@@ -127,7 +152,32 @@ if invincible = 1{
 if invincible = 0{
     visible = 1;
 }
-if global.special &gt; 0 and special &lt; 100 special += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if special &gt;= 100 and global.special &gt; 0{
+    instance_create(x,y,obj_special);
+    special = 0;
+}
 </string>
           </argument>
         </arguments>

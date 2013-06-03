@@ -67,6 +67,7 @@
     <sprite>sprites\spr_warningSign</sprite>
     <sprite>sprites\spr_special</sprite>
     <sprite>sprites\spr_special_bar</sprite>
+    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -159,6 +160,7 @@
       <object>objects\obj_cursor_mousepos</object>
     </objects>
     <object>objects\obj_text_settings</object>
+    <object>objects\obj_special</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>
