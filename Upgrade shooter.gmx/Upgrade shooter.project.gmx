@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -168,8 +169,9 @@
   <rooms name="rooms">
     <room>rooms\room_start</room>
     <room>rooms\room_main</room>
-    <room>rooms\room_devtest</room>
+    <room>rooms\room_W1lv1</room>
     <room>rooms\room_W1lv2</room>
+    <room>rooms\room_W1lv3</room>
     <room>rooms\room_devtest2</room>
     <room>rooms\room_devtest3</room>
     <room>rooms\room_shop</room>

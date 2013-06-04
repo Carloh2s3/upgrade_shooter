@@ -28,7 +28,7 @@
             <string>direction = 160 + random(40);
 image_angle = direction;
 outside = 0;
-hp = 6 * (global.difficulty/2);
+hp = 5 * (global.difficulty/2);
 if global.difficulty = 6 hp = 6*global.difficulty;
 works = 0;
 varset = 0;

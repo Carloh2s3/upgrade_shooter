@@ -26,19 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>cheat = 0;
-if room = room_devtest {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-if room = room_devtest2 {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-if room = room_devtest3 {
-    if global.speedmode = 1 hspeed =global.normalspeed;
-    if global.speedmode = 2 hspeed =global.superspeed;
-}
-else exit;
+if global.speedmode = 1 hspeed =global.normalspeed;
+if global.speedmode = 2 hspeed =global.superspeed;
+
 </string>
           </argument>
         </arguments>
@@ -61,10 +51,7 @@ else exit;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if x &gt;= room_width-50{
-    if room = room_devtest and global.levelprogress &lt; 1 global.levelprogress = 1;
-    if room = room_devtest2 and global.levelprogress &lt; 2 global.levelprogress = 2;
-    if room = room_devtest3 and global.levelprogress &lt; 3 global.levelprogress = 3;
+            <string>if x &gt;= room_width-100{
     room_goto(room_levels);
 }
 </string>

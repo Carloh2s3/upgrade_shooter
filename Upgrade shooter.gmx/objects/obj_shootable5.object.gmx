@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>direction = 180;
 outside = 0;
-hp = 8 * (global.difficulty/2);
+hp = 6 * (global.difficulty/2);
 if global.difficulty = 6 hp = 15 * global.difficulty;
 works = 0;
 varset = 0;

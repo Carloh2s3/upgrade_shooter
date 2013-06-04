@@ -104,7 +104,8 @@ mousepos_y = mouse_y;
             <string>if mousepos_x = mouse_x and mousepos_y = mouse_y and global.levelprogress &gt;= 1{
     if global.menumode = 0{
         global.menumode = 2;
-        obj_button_lv1.y = -110;
+        obj_button_lv1.y = -100;
+        y = obj_button_lv1.y + 110;
         instance_create(x,y,obj_levelMap);
     } else {
         global.menumode = 0;

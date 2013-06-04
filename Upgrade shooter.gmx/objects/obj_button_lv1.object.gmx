@@ -38,6 +38,52 @@ created = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.menumode = 0 y -= 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.menumode = 0 y += 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
@@ -148,9 +194,16 @@ mousepos_y = mouse_y;
         global.menumode = 1;
         obj_button_lv1.y = 10;
         instance_create(x,y,obj_levelMap);
+        ID = instance_create(x+5,y+114,obj_buttonLevelMap);
+        with ID {text = "testlvl1"; location = room_W1lv1};
+        ID1 = instance_create(x+160,y+114,obj_buttonLevelMap);
+        with ID1 {text = "testlvl2"; location = room_W1lv2};
+        ID1 = instance_create(x+5,y+163,obj_buttonLevelMap);
+        with ID1 {text = "testlvl3"; location = room_W1lv3};
     } else {
         global.menumode = 0;
         with obj_levelMap instance_destroy();
+        with obj_buttonLevelMap instance_destroy();
     }
 }
 </string>
