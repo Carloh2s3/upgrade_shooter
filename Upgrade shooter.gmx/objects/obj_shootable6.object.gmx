@@ -57,7 +57,7 @@ varset = 0;
             <string>if outside = 1 exit;
 repeat(1) instance_create(x,y,obj_points10)
 repeat(3) instance_create(x,y,obj_points5)
-repeat(4) instance_create(x,y,obj_points)
+repeat(1) instance_create(x,y,obj_points)
 </string>
           </argument>
         </arguments>

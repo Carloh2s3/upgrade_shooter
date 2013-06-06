@@ -55,7 +55,7 @@ can_shoot = floor(random(8))
           <argument>
             <kind>1</kind>
             <string>if outside = 1 exit;
-repeat(4) instance_create(x,y,obj_points)
+repeat(5) instance_create(x,y,obj_points)
 </string>
           </argument>
         </arguments>

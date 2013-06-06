@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>direction = 180;
 outside = 0;
-hp = 10 * (global.difficulty/2);
+hp = 12 * (global.difficulty/2);
 if global.difficulty = 6 hp = 10 * global.difficulty;
 works = 0;
 varset = 0;
@@ -54,9 +54,7 @@ varset = 0;
           <argument>
             <kind>1</kind>
             <string>if outside = 1 exit;
-repeat(1) instance_create(x,y,obj_points10)
-repeat(3) instance_create(x,y,obj_points5)
-repeat(2) instance_create(x,y,obj_points)
+repeat(5) instance_create(x,y,obj_points5)
 </string>
           </argument>
         </arguments>
