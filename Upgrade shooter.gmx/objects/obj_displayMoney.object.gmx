@@ -72,6 +72,7 @@ if cheat = "superspeed" global.speedmode = 2;
           <argument>
             <kind>1</kind>
             <string>draw_set_font(font0);
+draw_set_color(c_black);
 draw_text(view_xview+200,view_yview+10,"points:");
 draw_text(view_xview+280,view_yview+10,global.money);
 </string>

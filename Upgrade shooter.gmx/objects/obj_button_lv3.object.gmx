@@ -107,6 +107,8 @@ mousepos_y = mouse_y;
         obj_button_lv1.y = -210;
         y = obj_button_lv1.y + 220;
         instance_create(x,y,obj_levelMap);
+        ID = instance_create(x+5,y+114,obj_buttonLevelMap);
+        with ID {text = "testlvl1"; location = room_W3lv1};
     } else {
         global.menumode = 0;
         with obj_levelMap instance_destroy();

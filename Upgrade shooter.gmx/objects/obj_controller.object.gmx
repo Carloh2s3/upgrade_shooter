@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-101010</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,9 +26,61 @@
           <argument>
             <kind>1</kind>
             <string>cheat = 0;
-if global.speedmode = 1 hspeed =global.normalspeed;
-if global.speedmode = 2 hspeed =global.superspeed;
-
+drawmode = 0;
+movelock = 0;
+pickedUp = 0;
+defeated = 0;
+total = 0;
+percentdefeat = 0;
+endr = 0;
+totalEnemies = instance_number(obj_shootableparent);
+if global.speedmode = 1 hspeed = global.normalspeed;
+if global.speedmode = 2 hspeed = global.superspeed;
+if global.levelprogress &lt;= 0{
+    if room = room_W1lv1 endr = 100;
+    if room = room_W1lv2 endr = 100;
+    if room = room_W1lv3 endr = 100;
+    if room = room_W1lv4 endr = 100;
+} else {
+    if room = room_W1lv1 endr = 25;
+    if room = room_W1lv2 endr = 25;
+    if room = room_W1lv3 endr = 25;
+    if room = room_W1lv4 endr = 25;
+}
+if global.levelprogress &lt;= 1{
+    if room = room_W2lv1 endr = 200;
+} else {
+    if room = room_W2lv1 endr = 50;
+}
+if global.levelprogress &lt;= 2{
+    if room = room_W3lv1 endr = 400;
+} else {
+    if room = room_W3lv1 endr = 100;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.money += total;
+room_goto(room_main);
 </string>
           </argument>
         </arguments>
@@ -51,8 +103,21 @@ if global.speedmode = 2 hspeed =global.superspeed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if x &gt;= room_width-100{
-    room_goto(room_levels);
+            <string>if x &gt;= room_width-340 and movelock = 0{
+    alarm[0] = 180;
+    drawmode = 1;
+    hspeed = 0;
+    if background_exists(0) background_hspeed[0] -= 2;
+    if background_exists(1) background_hspeed[1] -= 2;
+    if background_exists(2) background_hspeed[2] -= 2;
+    if background_exists(3) background_hspeed[3] -= 2;
+    if background_exists(4) background_hspeed[4] -= 2;
+    if background_exists(5) background_hspeed[5] -= 2;
+    if background_exists(6) background_hspeed[6] -= 2;
+    if background_exists(7) background_hspeed[7] -= 2;
+    movelock = 1;
+    total = endr + pickedUp + ceil(endr * (defeated / totalEnemies));
+    percentdefeat = floor(100 / totalEnemies * defeated);
 }
 </string>
           </argument>
@@ -123,6 +188,7 @@ if cheat = "superspeed" global.speedmode = 2;
           <argument>
             <kind>1</kind>
             <string>draw_set_font(font0);
+draw_set_color(c_black);
 draw_text(view_xview+200,view_yview+10,"points:");
 draw_text(view_xview+280,view_yview+10,global.money);
 
@@ -130,8 +196,26 @@ var drawX, drawY;
 
 drawX = view_xview[0];
 drawY = view_yview[0];
+if drawmode = 1{
+    draw_set_color(c_white);
+    draw_line_width(drawX+100,drawY+280,drawX+540,drawY+280,8);
+    draw_set_color(c_blue);
+    draw_set_font(font_endlvTotal);
+    draw_text(drawX+130,drawY+200,"Level Reward  :");
+    draw_text(drawX+500,drawY+200,endr);
+    draw_set_font(font_endlvMain);
+    draw_text(drawX+130,drawY+230,"Picked up     :");
+    draw_text(drawX+490,drawY+230,pickedUp);
+    draw_text(drawX+130,drawY+250,"Enemies beaten:");
+    draw_text(drawX+490,drawY+250,percentdefeat);
+    draw_text(drawX+515,drawY+250,"%");
+    draw_set_font(font_endlvTotal);
+    draw_text(drawX+100,drawY+285,"Total money earned:");
+    draw_text(drawX+500,drawY+285,total);
+}
 if global.special &gt; 0{
     draw_sprite(spr_special_bar,0,view_xview[0]+153,view_yview[0]+425)
+    draw_set_color(c_black);
     draw_rectangle(view_xview[0]+200,view_yview[0]+436,view_xview[0]+200+obj_player.special,view_yview[0]+459,0)
 }
 for (i = 0; i &lt; lives; i += 1) {

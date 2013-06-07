@@ -79,7 +79,7 @@ if speed &gt; 13 speed = 13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.money += 10;
+            <string>obj_controller.pickedUp += 10;
 </string>
           </argument>
         </arguments>

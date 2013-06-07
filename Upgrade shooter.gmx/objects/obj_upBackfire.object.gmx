@@ -100,6 +100,7 @@ current = global.backfire;
           <argument>
             <kind>1</kind>
             <string>draw_sprite(spr_upgrade,-1,x,y)
+draw_set_color(c_black);
 draw_text(x+45,y+8,"Backfire upgrade")
 draw_text(x+45,y+22,"current level: ")
 draw_text(x+130,y+22,global.backfire)

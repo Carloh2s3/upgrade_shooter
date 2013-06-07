@@ -70,6 +70,7 @@
     <sprite>sprites\spr_special_bar</sprite>
     <sprite>sprites\spr_levelMap</sprite>
     <sprite>sprites\spr_buttonLevelMap</sprite>
+    <sprite>sprites\spr_bossGunship</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -99,8 +100,13 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_enemyHp.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\font_endlvMain</font>
+    <font>fonts\font_endlvTotal</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -173,8 +179,8 @@
     <room>rooms\room_W1lv2</room>
     <room>rooms\room_W1lv3</room>
     <room>rooms\room_W1lv4</room>
-    <room>rooms\room_devtest2</room>
-    <room>rooms\room_devtest3</room>
+    <room>rooms\room_W2lv1</room>
+    <room>rooms\room_W3lv1</room>
     <room>rooms\room_shop</room>
     <room>rooms\room_settings</room>
     <room>rooms\room_levels</room>
