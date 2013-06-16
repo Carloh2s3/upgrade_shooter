@@ -71,6 +71,7 @@
     <sprite>sprites\spr_levelMap</sprite>
     <sprite>sprites\spr_buttonLevelMap</sprite>
     <sprite>sprites\spr_bossGunship</sprite>
+    <sprite>sprites\spr_focus</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -129,6 +130,7 @@
     <object>objects\obj_upMorelives</object>
     <object>objects\obj_upBackfire</object>
     <object>objects\obj_upSpecial</object>
+    <object>objects\obj_upFocus</object>
     <objects name="buttons">
       <object>objects\obj_buttonGo</object>
       <object>objects\obj_buttonShop</object>
@@ -171,6 +173,7 @@
     <object>objects\obj_special</object>
     <object>objects\obj_levelMap</object>
     <object>objects\obj_buttonLevelMap</object>
+    <object>objects\object54</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>image_index = global.firepower;
 damage = global.firepower + 1;
-speed = 30;
+speed = 30+global.firepower*2;
 image_speed = 0;
 image_angle = direction;
 </string>

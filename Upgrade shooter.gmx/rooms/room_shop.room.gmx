@@ -59,6 +59,7 @@
     <instance objName="obj_upBackfire" x="352" y="160" name="inst_3025FB1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_displayMoney" x="160" y="0" name="inst_8733E7FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upSpecial" x="352" y="256" name="inst_CA09CA61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_upFocus" x="352" y="352" name="inst_627F2C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

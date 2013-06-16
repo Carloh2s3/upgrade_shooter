@@ -191,6 +191,9 @@ if cheat = "superspeed" global.speedmode = 2;
 draw_set_color(c_black);
 draw_text(view_xview+200,view_yview+10,"points:");
 draw_text(view_xview+280,view_yview+10,global.money);
+if global.focus &gt; 0 and obj_player.focus = 1{
+    draw_sprite(spr_focus,global.focus-1,obj_player.x,obj_player.y);
+}
 
 var drawX, drawY;
 
@@ -207,7 +210,9 @@ if drawmode = 1{
     draw_text(drawX+130,drawY+230,"Picked up     :");
     draw_text(drawX+490,drawY+230,pickedUp);
     draw_text(drawX+130,drawY+250,"Enemies beaten:");
-    draw_text(drawX+490,drawY+250,percentdefeat);
+    draw_text(drawX+420,drawY+250,endr);
+    draw_text(drawX+460,drawY+250,"x");
+    draw_text(drawX+480,drawY+250,percentdefeat);
     draw_text(drawX+515,drawY+250,"%");
     draw_set_font(font_endlvTotal);
     draw_text(drawX+100,drawY+285,"Total money earned:");

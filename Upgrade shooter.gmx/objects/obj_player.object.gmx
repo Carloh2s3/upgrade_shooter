@@ -35,6 +35,7 @@ lives = global.morelives;
 invincible = 1;
 special = 100;
 alarm[2] = 20-(global.special*1.5);
+focus = 0;
 </string>
           </argument>
         </arguments>
@@ -152,6 +153,12 @@ if invincible = 1{
 if invincible = 0{
     visible = 1;
 }
+if global.focus &gt; 0 and keyboard_check(vk_shift){
+    focus = 1;
+}
+if keyboard_check_released(vk_shift){
+    focus = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -200,7 +207,8 @@ if invincible = 0{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.fireamount = 0 and delay &lt; 0{
+            <string>if focus = 0{
+if global.fireamount = 0 and delay &lt; 0{
    ID = instance_create(x,y,obj_shoot1); with ID direction = 0;
    delay = delay_base - global.firerate;
 }
@@ -239,7 +247,48 @@ if global.fireamount = 5 and delay &lt; 0{
    ID = instance_create(x,y,obj_shoot1); with ID direction = 10;
    delay = delay_base - global.firerate;
 }
-
+}
+if focus = 1{
+if global.fireamount = 0 and delay &lt; 0{
+   ID = instance_create(x,y,obj_shoot1); with ID direction = 0;
+   delay = delay_base - global.firerate;
+}
+if global.fireamount = 1 and delay &lt; 0{
+   ID = instance_create(x,y+6,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y-6,obj_shoot1); with ID direction = 0;
+   delay = delay_base - global.firerate;
+}
+if global.fireamount = 2 and delay &lt; 0{
+   ID = instance_create(x,y,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y+global.focus,obj_shoot1); with ID direction = -20+(global.focus*2.22);
+   ID = instance_create(x,y-global.focus,obj_shoot1); with ID direction = 20-(global.focus*2.22);
+   delay = delay_base - global.firerate;
+}
+if global.fireamount = 3 and delay &lt; 0{
+   ID = instance_create(x,y+6,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y-6,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y+global.focus,obj_shoot1); with ID direction = -20+(global.focus*2.22);
+   ID = instance_create(x,y-global.focus,obj_shoot1); with ID direction = 20-(global.focus*2.22);
+   delay = delay_base - global.firerate;
+}
+if global.fireamount = 4 and delay &lt; 0{
+   ID = instance_create(x,y,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y+(global.focus*2),obj_shoot1); with ID direction = -20+(global.focus*2.22);
+   ID = instance_create(x,y-(global.focus*2),obj_shoot1); with ID direction = 20-(global.focus*2.22);
+   ID = instance_create(x,y+global.focus,obj_shoot1); with ID direction = -10+(global.focus*1.11);
+   ID = instance_create(x,y-global.focus,obj_shoot1); with ID direction = 10-(global.focus*1.11);
+   delay = delay_base - global.firerate;
+}
+if global.fireamount = 5 and delay &lt; 0{
+   ID = instance_create(x,y+6,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y-6,obj_shoot1); with ID direction = 0;
+   ID = instance_create(x,y+(global.focus*2),obj_shoot1); with ID direction = -20+(global.focus*2.22);
+   ID = instance_create(x,y-(global.focus*2),obj_shoot1); with ID direction = 20-(global.focus*2.22);
+   ID = instance_create(x,y+global.focus,obj_shoot1); with ID direction = -10+(global.focus*1.11);
+   ID = instance_create(x,y-global.focus,obj_shoot1); with ID direction = 10-(global.focus*1.11);
+   delay = delay_base - global.firerate;
+}
+}
 </string>
           </argument>
         </arguments>
