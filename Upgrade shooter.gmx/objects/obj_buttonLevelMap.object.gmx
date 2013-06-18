@@ -72,7 +72,10 @@ text = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room_exists(location) room_goto(location);
+            <string>if room_exists(location){
+    room_goto(location);
+    global.menumode = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -96,7 +99,9 @@ text = 0;
           <argument>
             <kind>1</kind>
             <string>draw_sprite(spr_buttonLevelMap,0,x,y);
-draw_text(x+3,y+3,text);
+draw_set_font(font0);
+draw_set_color(c_black);
+draw_text(x+5,y+10,text);
 </string>
           </argument>
         </arguments>

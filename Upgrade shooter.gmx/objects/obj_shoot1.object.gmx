@@ -30,6 +30,9 @@ damage = global.firepower + 1;
 speed = 30+global.firepower*2;
 image_speed = 0;
 image_angle = direction;
+posdif = obj_player.y-y;
+poslock = 0;
+if obj_player.focus = 1 poslock = 1;
 </string>
           </argument>
         </arguments>
@@ -53,6 +56,11 @@ image_angle = direction;
           <argument>
             <kind>1</kind>
             <string>image_angle = direction;
+
+if poslock = 1 and obj_player.focus = 1{
+    y = obj_player.y+posdif;
+}
+
 </string>
           </argument>
         </arguments>

@@ -148,7 +148,11 @@ else window_set_fullscreen(0);
           <argument>
             <kind>1</kind>
             <string>draw_sprite(spr_buttonScreen,i,x,y);
-if i = 1 draw_text(x + 300,y,"cheating in full-screen#mode may result in #game freeze!")
+if i = 1 {
+    draw_set_font(font0);
+    draw_set_color(c_black);
+    draw_text(x + 300,y,"cheating in full-screen#mode may result in #game freeze!");
+}
 </string>
           </argument>
         </arguments>

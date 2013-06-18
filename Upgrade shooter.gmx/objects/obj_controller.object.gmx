@@ -38,14 +38,14 @@ if global.speedmode = 1 hspeed = global.normalspeed;
 if global.speedmode = 2 hspeed = global.superspeed;
 if global.levelprogress &lt;= 0{
     if room = room_W1lv1 endr = 100;
-    if room = room_W1lv2 endr = 100;
-    if room = room_W1lv3 endr = 100;
-    if room = room_W1lv4 endr = 100;
+    if room = room_W1lv2 endr = 110;
+    if room = room_W1lv3 endr = 130;
+    if room = room_W1lv4 endr = 160;
 } else {
     if room = room_W1lv1 endr = 25;
-    if room = room_W1lv2 endr = 25;
-    if room = room_W1lv3 endr = 25;
-    if room = room_W1lv4 endr = 25;
+    if room = room_W1lv2 endr = 28;
+    if room = room_W1lv3 endr = 33;
+    if room = room_W1lv4 endr = 40;
 }
 if global.levelprogress &lt;= 1{
     if room = room_W2lv1 endr = 200;
@@ -103,7 +103,7 @@ room_goto(room_main);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if x &gt;= room_width-340 and movelock = 0{
+            <string>if x &gt;= room_width-340 and movelock = 0 and instance_number(obj_bossParent) = 0{
     alarm[0] = 180;
     drawmode = 1;
     hspeed = 0;
@@ -153,6 +153,8 @@ if cheat = "godlike" {//ISSUES REGARDING THE COST OF UPGRADES WHEN USING THIS CH
     global.movespeed = 9;
     global.morelives = 9;
     global.backfire = 6;
+    global.special = 9;
+    global.focus = 9;
 }
 if cheat = "weakling" {
     global.firerate = 0;
@@ -161,6 +163,8 @@ if cheat = "weakling" {
     global.movespeed = 0;
     global.morelives = 0;
     global.backfire = 0;
+    global.special = 0;
+    global.focus = 0;
 }
 if cheat = "nomoney" global.money = 0;
 if cheat = "normalspeed" global.speedmode = 1;

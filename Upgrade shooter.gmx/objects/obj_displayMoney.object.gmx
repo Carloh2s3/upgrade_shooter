@@ -37,6 +37,8 @@ if cheat = "godlike" {//ISSUES REGARDING THE COST OF UPGRADES WHEN USING THIS CH
     global.movespeed = 9;
     global.morelives = 9;
     global.backfire = 6;
+    global.special = 9;
+    global.focus = 9;
 }
 if cheat = "weakling" {
     global.firerate = 0;
@@ -45,6 +47,8 @@ if cheat = "weakling" {
     global.movespeed = 0;
     global.morelives = 0;
     global.backfire = 0;
+    global.special = 0;
+    global.focus = 0;
 }
 if cheat = "nomoney" global.money = 0;
 if cheat = "normalspeed" global.speedmode = 1;

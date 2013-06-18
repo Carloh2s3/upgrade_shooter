@@ -72,6 +72,7 @@
     <sprite>sprites\spr_buttonLevelMap</sprite>
     <sprite>sprites\spr_bossGunship</sprite>
     <sprite>sprites\spr_focus</sprite>
+    <sprite>sprites\spr_shootHit</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -168,12 +169,13 @@
       <object>objects\obj_button_lv5</object>
       <object>objects\obj_cursor</object>
       <object>objects\obj_cursor_mousepos</object>
+      <object>objects\obj_buttonLevelMap</object>
+      <object>objects\obj_levelMap</object>
     </objects>
     <object>objects\obj_text_settings</object>
     <object>objects\obj_special</object>
-    <object>objects\obj_levelMap</object>
-    <object>objects\obj_buttonLevelMap</object>
-    <object>objects\object54</object>
+    <object>objects\obj_bossParent</object>
+    <object>objects\obj_shootHit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>
