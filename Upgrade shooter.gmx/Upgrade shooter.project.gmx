@@ -8,6 +8,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_ship</sprite>
+    <sprite>sprites\spr_shipmulti</sprite>
+    <sprite>sprites\spr_ringPlayers</sprite>
     <sprite>sprites\spr_shoot1</sprite>
     <sprite>sprites\spr_upgrade</sprite>
     <sprite>sprites\spr_exSmall</sprite>
@@ -73,6 +75,11 @@
     <sprite>sprites\spr_bossGunship</sprite>
     <sprite>sprites\spr_focus</sprite>
     <sprite>sprites\spr_shootHit</sprite>
+    <sprite>sprites\spr_buttonMultiplayer</sprite>
+    <sprite>sprites\spr_buttonConnect</sprite>
+    <sprite>sprites\spr_buttonLeave</sprite>
+    <sprite>sprites\spr_buttonCreate</sprite>
+    <sprite>sprites\sprite58</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -104,6 +111,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_enemyHp.gml</script>
+    <script>scripts\connectDisconnectClient.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -111,27 +119,41 @@
     <font>fonts\font_endlvTotal</font>
   </fonts>
   <objects name="objects">
+    <objects name="multiplayer networking">
+      <object>objects\obj_buttonCreate</object>
+      <object>objects\obj_buttonConnect</object>
+      <object>objects\obj_buttonMultiplayer</object>
+      <object>objects\obj_networkController</object>
+      <object>objects\obj_clientTest</object>
+      <object>objects\obj_client</object>
+      <object>objects\obj_server</object>
+      <object>objects\obj_player1</object>
+    </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_init_game</object>
     <object>objects\obj_shoot1</object>
     <object>objects\obj_shootparent</object>
     <object>objects\obj_shootableparent</object>
-    <object>objects\obj_shootable1</object>
-    <object>objects\obj_shootable2</object>
-    <object>objects\obj_shootable3</object>
-    <object>objects\obj_shootable4</object>
-    <object>objects\obj_shootable5</object>
-    <object>objects\obj_shootable6</object>
-    <object>objects\obj_tower</object>
-    <object>objects\obj_turret</object>
-    <object>objects\obj_upFirerate</object>
-    <object>objects\obj_upFirepower</object>
-    <object>objects\obj_upFireamount</object>
-    <object>objects\obj_upMovespeed</object>
-    <object>objects\obj_upMorelives</object>
-    <object>objects\obj_upBackfire</object>
-    <object>objects\obj_upSpecial</object>
-    <object>objects\obj_upFocus</object>
+    <objects name="enemies W1">
+      <object>objects\obj_shootable1</object>
+      <object>objects\obj_shootable2</object>
+      <object>objects\obj_shootable3</object>
+      <object>objects\obj_shootable4</object>
+      <object>objects\obj_shootable5</object>
+      <object>objects\obj_shootable6</object>
+      <object>objects\obj_tower</object>
+      <object>objects\obj_turret</object>
+    </objects>
+    <objects name="upgrades">
+      <object>objects\obj_upFirerate</object>
+      <object>objects\obj_upFirepower</object>
+      <object>objects\obj_upFireamount</object>
+      <object>objects\obj_upMovespeed</object>
+      <object>objects\obj_upMorelives</object>
+      <object>objects\obj_upBackfire</object>
+      <object>objects\obj_upSpecial</object>
+      <object>objects\obj_upFocus</object>
+    </objects>
     <objects name="buttons">
       <object>objects\obj_buttonGo</object>
       <object>objects\obj_buttonShop</object>
@@ -179,17 +201,28 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>
-    <room>rooms\room_main</room>
-    <room>rooms\room_W1lv1</room>
-    <room>rooms\room_W1lv2</room>
-    <room>rooms\room_W1lv3</room>
-    <room>rooms\room_W1lv4</room>
-    <room>rooms\room_W2lv1</room>
-    <room>rooms\room_W3lv1</room>
-    <room>rooms\room_shop</room>
-    <room>rooms\room_settings</room>
-    <room>rooms\room_levels</room>
+    <rooms name="menus">
+      <room>rooms\room_main</room>
+      <room>rooms\room_levels</room>
+      <room>rooms\room_shop</room>
+      <room>rooms\room_settings</room>
+    </rooms>
+    <rooms name="W1">
+      <room>rooms\room_W1lv1</room>
+      <room>rooms\room_W1lv2</room>
+      <room>rooms\room_W1lv3</room>
+      <room>rooms\room_W1lv4</room>
+    </rooms>
+    <rooms name="W2">
+      <room>rooms\room_W2lv1</room>
+    </rooms>
+    <rooms name="W3">
+      <room>rooms\room_W3lv1</room>
+    </rooms>
     <room>rooms\room5</room>
+    <room>rooms\room_x</room>
+    <room>rooms\room_works</room>
+    <room>rooms\room14</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

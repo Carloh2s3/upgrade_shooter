@@ -63,6 +63,10 @@ global.superspeed = 10;
 global.speedmode = 1;
 global.menumode = 0;
 
+global.master = 0;
+global.player = 0;
+globalvar server, client;
+
 alarm[0] = 2;
 </string>
           </argument>
