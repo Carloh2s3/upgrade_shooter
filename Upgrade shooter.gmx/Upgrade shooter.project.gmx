@@ -28,6 +28,8 @@
         <sprite>sprites\spr_laser</sprite>
         <sprite>sprites\spr_blast_turret</sprite>
         <sprite>sprites\spr_firebolt</sprite>
+        <sprite>sprites\spr_bullet2</sprite>
+        <sprite>sprites\spr_blast</sprite>
       </sprites>
       <sprites name="level1">
         <sprite>sprites\spr_shootable1</sprite>
@@ -36,6 +38,7 @@
         <sprite>sprites\spr_shootable4</sprite>
         <sprite>sprites\spr_shootable5</sprite>
         <sprite>sprites\spr_shootable6</sprite>
+        <sprite>sprites\spr_shootable7</sprite>
       </sprites>
       <sprites name="level2">
         <sprite>sprites\spr_magma1</sprite>
@@ -79,7 +82,10 @@
     <sprite>sprites\spr_buttonConnect</sprite>
     <sprite>sprites\spr_buttonLeave</sprite>
     <sprite>sprites\spr_buttonCreate</sprite>
-    <sprite>sprites\sprite58</sprite>
+    <sprite>sprites\spr_pickups</sprite>
+    <sprite>sprites\spr_lightning</sprite>
+    <sprite>sprites\spr_orb</sprite>
+    <sprite>sprites\spr_blaster</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
