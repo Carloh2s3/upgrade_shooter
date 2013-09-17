@@ -33,6 +33,7 @@ works = 0;
 varset = 0;
 image_angle = 180;
 worth = 5;
+enyID=5;
 </string>
           </argument>
         </arguments>
@@ -181,5 +182,8 @@ if x = view_xview - sprite_width {outside = 1; instance_destroy()};
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>32,32</point>
+    <point>32,32</point>
+  </PhysicsShapePoints>
 </object>

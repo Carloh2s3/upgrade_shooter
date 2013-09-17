@@ -7,16 +7,25 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_ship</sprite>
-    <sprite>sprites\spr_shipmulti</sprite>
-    <sprite>sprites\spr_ringPlayers</sprite>
-    <sprite>sprites\spr_shoot1</sprite>
-    <sprite>sprites\spr_upgrade</sprite>
+    <sprites name="ship">
+      <sprite>sprites\spr_ship</sprite>
+      <sprite>sprites\spr_shipmulti</sprite>
+      <sprite>sprites\spr_ringPlayers</sprite>
+      <sprite>sprites\spr_shoot1</sprite>
+      <sprite>sprites\spr_shoot2</sprite>
+      <sprite>sprites\spr_shoot3</sprite>
+      <sprite>sprites\spr_shootHit</sprite>
+    </sprites>
     <sprite>sprites\spr_exSmall</sprite>
     <sprite>sprites\spr_exSmallDebris</sprite>
     <sprite>sprites\spr_exSmallBeam</sprite>
-    <sprite>sprites\spr_points</sprite>
-    <sprite>sprites\spr_lives</sprite>
+    <sprites name="gameplay mechanic sprites">
+      <sprite>sprites\spr_points</sprite>
+      <sprite>sprites\spr_lives</sprite>
+      <sprite>sprites\spr_warningSign</sprite>
+      <sprite>sprites\spr_special_bar</sprite>
+      <sprite>sprites\spr_focus</sprite>
+    </sprites>
     <sprites name="enemies">
       <sprites name="stuctures">
         <sprite>sprites\spr_tower</sprite>
@@ -44,48 +53,53 @@
         <sprite>sprites\spr_magma1</sprite>
       </sprites>
     </sprites>
-    <sprites name="buttons">
-      <sprite>sprites\spr_buttonGo</sprite>
-      <sprite>sprites\spr_buttonQuit</sprite>
-      <sprite>sprites\spr_buttonShop</sprite>
-      <sprite>sprites\spr_buttonBack</sprite>
-      <sprite>sprites\spr_buttonSave</sprite>
-      <sprite>sprites\spr_buttonLoad</sprite>
-      <sprite>sprites\spr_buttonDifficulty</sprite>
-      <sprite>sprites\spr_buttonScreen</sprite>
-      <sprite>sprites\spr_buttonSettings</sprite>
-    </sprites>
     <sprites name="boss1">
       <sprite>sprites\spr_boss1_wheels</sprite>
       <sprite>sprites\spr_boss1_body</sprite>
       <sprite>sprites\spr_boss1_arm</sprite>
       <sprite>sprites\spr_boss1_sword</sprite>
     </sprites>
-    <sprite>sprites\spr_levels</sprite>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_cursor_mousepos</sprite>
-    <sprite>sprites\spr_tut</sprite>
-    <sprite>sprites\spr_CF_clouds</sprite>
-    <sprite>sprites\spr_text_settings</sprite>
-    <sprite>sprites\spr_text_mark</sprite>
-    <sprite>sprites\spr_efMagmaSplatter</sprite>
-    <sprite>sprites\spr_efBrimmingFire</sprite>
-    <sprite>sprites\spr_warningSign</sprite>
-    <sprite>sprites\spr_special</sprite>
-    <sprite>sprites\spr_special_bar</sprite>
-    <sprite>sprites\spr_levelMap</sprite>
-    <sprite>sprites\spr_buttonLevelMap</sprite>
+    <sprites name="menu">
+      <sprites name="buttons">
+        <sprite>sprites\spr_buttonGo</sprite>
+        <sprite>sprites\spr_buttonQuit</sprite>
+        <sprite>sprites\spr_buttonShop</sprite>
+        <sprite>sprites\spr_buttonBack</sprite>
+        <sprite>sprites\spr_buttonSave</sprite>
+        <sprite>sprites\spr_buttonLoad</sprite>
+        <sprite>sprites\spr_buttonDifficulty</sprite>
+        <sprite>sprites\spr_buttonScreen</sprite>
+        <sprite>sprites\spr_buttonSettings</sprite>
+        <sprite>sprites\spr_upgrade</sprite>
+      </sprites>
+      <sprite>sprites\spr_levels</sprite>
+      <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\spr_cursor_mousepos</sprite>
+      <sprite>sprites\spr_levelMap</sprite>
+      <sprite>sprites\spr_buttonLevelMap</sprite>
+      <sprite>sprites\spr_text_mark</sprite>
+      <sprite>sprites\spr_text_settings</sprite>
+    </sprites>
+    <sprites name="in-level fancies">
+      <sprite>sprites\spr_CF_clouds</sprite>
+      <sprite>sprites\spr_efMagmaSplatter</sprite>
+      <sprite>sprites\spr_efBrimmingFire</sprite>
+    </sprites>
     <sprite>sprites\spr_bossGunship</sprite>
-    <sprite>sprites\spr_focus</sprite>
-    <sprite>sprites\spr_shootHit</sprite>
-    <sprite>sprites\spr_buttonMultiplayer</sprite>
-    <sprite>sprites\spr_buttonConnect</sprite>
-    <sprite>sprites\spr_buttonLeave</sprite>
-    <sprite>sprites\spr_buttonCreate</sprite>
-    <sprite>sprites\spr_pickups</sprite>
-    <sprite>sprites\spr_lightning</sprite>
-    <sprite>sprites\spr_orb</sprite>
+    <sprites name="powers">
+      <sprite>sprites\spr_pickups</sprite>
+      <sprite>sprites\spr_lightning</sprite>
+      <sprite>sprites\spr_orb</sprite>
+      <sprite>sprites\spr_special</sprite>
+    </sprites>
+    <sprites name="network">
+      <sprite>sprites\spr_buttonLeave</sprite>
+      <sprite>sprites\spr_buttonCreate</sprite>
+      <sprite>sprites\spr_buttonMultiplayer</sprite>
+      <sprite>sprites\spr_buttonConnect</sprite>
+    </sprites>
     <sprite>sprites\spr_blaster</sprite>
+    <sprite>sprites\spr_tut</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -135,11 +149,12 @@
       <object>objects\obj_server</object>
       <object>objects\obj_player1</object>
     </objects>
-    <object>objects\obj_player</object>
-    <object>objects\obj_init_game</object>
-    <object>objects\obj_shoot1</object>
-    <object>objects\obj_shootparent</object>
-    <object>objects\obj_shootableparent</object>
+    <objects name="ship">
+      <object>objects\obj_shoot1</object>
+      <object>objects\obj_special</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_shootHit</object>
+    </objects>
     <objects name="enemies W1">
       <object>objects\obj_shootable1</object>
       <object>objects\obj_shootable2</object>
@@ -149,6 +164,11 @@
       <object>objects\obj_shootable6</object>
       <object>objects\obj_tower</object>
       <object>objects\obj_turret</object>
+      <objects name="bullets">
+        <object>objects\obj_laser</object>
+        <object>objects\obj_blast_turret</object>
+        <object>objects\obj_bullet</object>
+      </objects>
     </objects>
     <objects name="upgrades">
       <object>objects\obj_upFirerate</object>
@@ -171,12 +191,6 @@
       <object>objects\obj_buttonDifficulty</object>
       <object>objects\obj_buttonScreen</object>
     </objects>
-    <object>objects\obj_controller</object>
-    <object>objects\obj_displayMoney</object>
-    <object>objects\obj_laser</object>
-    <object>objects\obj_blast_turret</object>
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_bulletparent</object>
     <objects name="points">
       <object>objects\obj_points</object>
       <object>objects\obj_points5</object>
@@ -200,10 +214,23 @@
       <object>objects\obj_buttonLevelMap</object>
       <object>objects\obj_levelMap</object>
     </objects>
-    <object>objects\obj_text_settings</object>
-    <object>objects\obj_special</object>
-    <object>objects\obj_bossParent</object>
-    <object>objects\obj_shootHit</object>
+    <objects name="controller objects">
+      <object>objects\obj_shootableparent</object>
+      <object>objects\obj_shootparent</object>
+      <object>objects\obj_init_game</object>
+      <object>objects\obj_controller</object>
+      <object>objects\obj_displayMoney</object>
+      <object>objects\obj_bulletparent</object>
+      <object>objects\obj_text_settings</object>
+      <object>objects\obj_bossParent</object>
+    </objects>
+    <object>objects\objExSmallTarget</object>
+    <object>objects\objExSmall</object>
+    <object>objects\objExSmallBeam</object>
+    <object>objects\objExTest</object>
+    <objects name="BossSub1">
+      <object>objects\obj_bossGunship</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>
@@ -229,6 +256,7 @@
     <room>rooms\room_x</room>
     <room>rooms\room_works</room>
     <room>rooms\room14</room>
+    <room>rooms\room15</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

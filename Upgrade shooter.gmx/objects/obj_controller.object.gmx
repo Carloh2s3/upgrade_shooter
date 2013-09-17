@@ -118,7 +118,8 @@ room_goto(room_main);
     movelock = 1;
     total = endr + pickedUp + ceil(endr * (defeated / totalEnemies));
     percentdefeat = floor(100 / totalEnemies * defeated);
-}
+} else if instance_number(obj_bossParent) &gt; 0 hspeed = 0;
+if keyboard_check_pressed(vk_escape) room_goto(room_levels);
 </string>
           </argument>
         </arguments>
@@ -214,10 +215,10 @@ if drawmode = 1{
     draw_text(drawX+130,drawY+230,"Picked up     :");
     draw_text(drawX+490,drawY+230,pickedUp);
     draw_text(drawX+130,drawY+250,"Enemies beaten:");
-    draw_text(drawX+420,drawY+250,endr);
-    draw_text(drawX+460,drawY+250,"x");
-    draw_text(drawX+480,drawY+250,percentdefeat);
-    draw_text(drawX+515,drawY+250,"%");
+    draw_text(drawX+495,drawY+250,endr);
+    draw_text(drawX+480,drawY+250,"x");
+    draw_text(drawX+420,drawY+250,percentdefeat);
+    draw_text(drawX+460,drawY+250,"%");
     draw_set_font(font_endlvTotal);
     draw_text(drawX+100,drawY+285,"Total money earned:");
     draw_text(drawX+500,drawY+285,total);

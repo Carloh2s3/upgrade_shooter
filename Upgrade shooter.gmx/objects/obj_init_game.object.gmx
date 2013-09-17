@@ -62,6 +62,8 @@ global.normalspeed = 2;
 global.superspeed = 10;
 global.speedmode = 1;
 global.menumode = 0;
+global.playerskin = 0;
+global.weapon = 0;
 
 global.master = 0;
 global.player = 0;

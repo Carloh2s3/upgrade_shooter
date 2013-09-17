@@ -126,6 +126,11 @@ file_text_writeln(file);
 file_text_write_real(file, global.difficulty);
 file_text_writeln(file);
 file_text_write_real(file, global.totalspent);
+
+file_text_writeln(file);
+file_text_write_real(file, global.playerskin);
+file_text_writeln(file);
+file_text_write_real(file, global.weapon);
 file_text_close(file);
 
 </string>
@@ -145,5 +150,8 @@ file_text_close(file);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>50,50</point>
+  </PhysicsShapePoints>
 </object>

@@ -32,6 +32,7 @@ if global.difficulty = 6 hp = 10 * global.difficulty;
 works = 0;
 varset = 0;
 worth = 5;
+enyID=3;
 </string>
           </argument>
         </arguments>
@@ -98,5 +99,8 @@ if x = view_xview - sprite_width {outside = 1; instance_destroy()};
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>28,28</point>
+  </PhysicsShapePoints>
 </object>

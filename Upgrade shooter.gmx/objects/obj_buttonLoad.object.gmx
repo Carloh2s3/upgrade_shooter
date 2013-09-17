@@ -126,6 +126,11 @@ file_text_readln(file);
 global.difficulty = file_text_read_real(file);
 file_text_readln(file);
 global.totalspent = file_text_read_real(file);
+
+file_text_readln(file);
+global.playerskin = file_text_read_real(file);
+file_text_readln(file);
+global.weapon = file_text_read_real(file);
 file_text_close(file);
 </string>
           </argument>
@@ -144,5 +149,8 @@ file_text_close(file);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>50,50</point>
+  </PhysicsShapePoints>
 </object>

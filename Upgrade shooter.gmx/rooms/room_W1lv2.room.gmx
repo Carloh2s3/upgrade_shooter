@@ -51,8 +51,6 @@
   </views>
   <instances>
     <instance objName="obj_player" x="320" y="256" name="inst_C075943D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="320" y="224" name="inst_F75F9E1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_buttonBack" x="0" y="0" name="inst_2A7A067B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable1" x="720" y="240" name="inst_C72710E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable4" x="752" y="176" name="inst_9AEC161D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable4" x="752" y="320" name="inst_38AFC6D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -126,6 +124,7 @@
     <instance objName="obj_shootable3" x="4032" y="112" name="inst_F6BB8757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable3" x="4096" y="352" name="inst_167B6231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable3" x="4208" y="208" name="inst_0680DFDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controller" x="320" y="224" name="inst_F75F9E1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

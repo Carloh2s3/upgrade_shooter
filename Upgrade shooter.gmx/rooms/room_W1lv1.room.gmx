@@ -51,7 +51,6 @@
   </views>
   <instances>
     <instance objName="obj_player" x="320" y="256" name="inst_C075943D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_buttonBack" x="0" y="0" name="inst_2A7A067B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable4" x="784" y="240" name="inst_2EB0FE89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable4" x="896" y="176" name="inst_34633952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shootable4" x="896" y="304" name="inst_3F3C457E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -32,29 +32,11 @@ if worth &gt;= 10 repeat(floor(worth/10)) {instance_create(x,y,obj_points10); wo
 if worth &gt;= 5 repeat(floor(worth/5)) {instance_create(x,y,obj_points5); worth -= 5}
 if worth &gt;= 1 repeat(floor(worth)) {instance_create(x,y,obj_points); worth -= 1}
 obj_controller.defeated += 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_special">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hp -= 1+global.special;
+if enyID &gt;= 1{
+    if enyID &lt;= 6{
+        instance_create(x,y,objExSmallTarget);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -87,6 +69,29 @@ obj_controller.defeated += 1;
     }
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_special">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp -= 1+global.special;
 </string>
           </argument>
         </arguments>
