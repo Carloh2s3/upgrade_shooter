@@ -63,6 +63,7 @@ if works = 1 and direction &gt; 180 direction -= 0.05;
 if works = 1 and direction &lt; 180 direction += 0.05;
 image_angle = direction;
 if hp &lt; 1 instance_destroy();
+destroyed = 0;
 </string>
           </argument>
         </arguments>

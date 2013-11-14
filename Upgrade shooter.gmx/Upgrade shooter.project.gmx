@@ -9,7 +9,9 @@
   <sprites name="sprites">
     <sprites name="ship">
       <sprite>sprites\spr_ship</sprite>
+      <sprite>sprites\spr_ship2</sprite>
       <sprite>sprites\spr_shipmulti</sprite>
+      <sprite>sprites\spr_ship2multi</sprite>
       <sprite>sprites\spr_ringPlayers</sprite>
       <sprite>sprites\spr_shoot1</sprite>
       <sprite>sprites\spr_shoot2</sprite>
@@ -48,6 +50,7 @@
         <sprite>sprites\spr_shootable5</sprite>
         <sprite>sprites\spr_shootable6</sprite>
         <sprite>sprites\spr_shootable7</sprite>
+        <sprite>sprites\spr_bossGunship</sprite>
       </sprites>
       <sprites name="level2">
         <sprite>sprites\spr_magma1</sprite>
@@ -85,7 +88,6 @@
       <sprite>sprites\spr_efMagmaSplatter</sprite>
       <sprite>sprites\spr_efBrimmingFire</sprite>
     </sprites>
-    <sprite>sprites\spr_bossGunship</sprite>
     <sprites name="powers">
       <sprite>sprites\spr_pickups</sprite>
       <sprite>sprites\spr_lightning</sprite>
@@ -100,6 +102,8 @@
     </sprites>
     <sprite>sprites\spr_blaster</sprite>
     <sprite>sprites\spr_tut</sprite>
+    <sprite>sprites\spr_hit_effect1</sprite>
+    <sprite>sprites\spr_smoke</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -137,6 +141,7 @@
     <font>fonts\font0</font>
     <font>fonts\font_endlvMain</font>
     <font>fonts\font_endlvTotal</font>
+    <font>fonts\font3</font>
   </fonts>
   <objects name="objects">
     <objects name="multiplayer networking">
@@ -161,6 +166,7 @@
       <object>objects\obj_shootable3</object>
       <object>objects\obj_shootable4</object>
       <object>objects\obj_shootable5</object>
+      <object>objects\obj_shootable7</object>
       <object>objects\obj_shootable6</object>
       <object>objects\obj_tower</object>
       <object>objects\obj_turret</object>
@@ -231,6 +237,7 @@
     <objects name="BossSub1">
       <object>objects\obj_bossGunship</object>
     </objects>
+    <object>objects\obj_smoke</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_start</room>

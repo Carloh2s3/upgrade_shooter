@@ -34,6 +34,8 @@ varset = 0;
 can_shoot = floor(random(8))
 worth = 1;
 enyID=1;
+randomvar1 = ceil(random(2));
+destroyed = 0;
 </string>
           </argument>
         </arguments>
@@ -94,7 +96,20 @@ if works = 1 and varset = 0 {
         alarm[0] = 38;
     }
 };
-if hp &lt; 1 instance_destroy();
+if hp &lt; 1
+{
+    destroyed = 1;
+    if randomvar1 = 1
+    {
+        instance_destroy();
+    }
+    else
+    {
+        image_angle = direction-180;
+        vspeed += 0.2;
+        if y &gt; 440 instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

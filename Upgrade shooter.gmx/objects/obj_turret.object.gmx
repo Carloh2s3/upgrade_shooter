@@ -34,6 +34,7 @@ varset = 0;
 image_yscale = -1;
 worth = 10;
 enyID=8;
+destroyed = 0;
 </string>
           </argument>
         </arguments>

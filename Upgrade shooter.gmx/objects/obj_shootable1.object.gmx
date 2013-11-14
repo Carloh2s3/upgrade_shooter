@@ -33,6 +33,7 @@ works = 0;
 varset = 0;
 worth = 3;
 enyID=2;
+destroyed = 0;
 </string>
           </argument>
         </arguments>

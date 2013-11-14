@@ -29,6 +29,7 @@
 image_speed = 1;
 speed = 5+random(4);
 direction = image_angle;
+image_yscale = 0.5;
 </string>
           </argument>
         </arguments>
@@ -52,6 +53,7 @@ direction = image_angle;
           <argument>
             <kind>1</kind>
             <string>speed -= 0.5;
+image_yscale += 0.1;
 </string>
           </argument>
         </arguments>

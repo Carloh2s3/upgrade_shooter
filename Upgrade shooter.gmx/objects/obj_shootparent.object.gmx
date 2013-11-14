@@ -55,6 +55,7 @@
             <kind>1</kind>
             <string>ID = instance_create(x,y,obj_shootHit).image_angle = direction;
 other.hp -= damage;
+if other.destroyed != 1
 instance_destroy();
 </string>
           </argument>
