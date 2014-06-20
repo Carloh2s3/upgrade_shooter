@@ -140,7 +140,7 @@ if visible = 0{
             <string>dir = point_direction(x,y,mouse_x,mouse_y);
 dis = point_distance(x,y,mouse_x,mouse_y);
 motion_set(dir,dis/3)
-speedmax = 8+(global.movespeed * 2);
+speedmax = 6+(global.movespeed * 2);
 if speed &gt; speedmax speed = speedmax;
 if delay &gt;= 0 delay -= 1;
 if delayback &gt;= 0 delayback -= 1;

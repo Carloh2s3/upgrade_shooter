@@ -49,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>armseg = 132;
-jointune =obj_boss1_arm1.direction;
+jointune = obj_boss1_arm1.direction;
 jointdeux = direction;
 x = obj_boss1_arm1.x+armseg*cos(obj_boss1_arm1.direction*pi/180);
 y = obj_boss1_arm1.y-armseg*sin(obj_boss1_arm1.direction*pi/180);
@@ -104,5 +104,8 @@ if keyboard_check(vk_up) direction += 2;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>55,24</point>
+    <point>125,125</point>
+  </PhysicsShapePoints>
 </object>

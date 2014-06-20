@@ -125,7 +125,7 @@ if varset = 2{
 }
 if varset = 3{
     ID = instance_create(x,y,obj_laser)
-    with ID {direction = instance_nearest(x,y,obj_shootable5).image_angle; speed = 8};
+    with ID {direction = instance_nearest(x,y,obj_shootable7).image_angle; speed = 8};
     if global.difficulty &lt; 6{
         alarm[1] = 14-(global.difficulty/2);
     } else {

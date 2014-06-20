@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>repeat(10)instance_create(x,y,objExSmall);
-repeat(5)instance_create(x,y,objExSmallBeam);
+            <string>repeat(2)instance_create(x,y,objSmokeBoom);
 instance_destroy();
 </string>
           </argument>
