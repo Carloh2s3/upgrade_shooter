@@ -109,7 +109,15 @@
     <sprite>sprites\spr_smoke</sprite>
     <sprite>sprites\spr_efRingExplosion</sprite>
     <sprite>sprites\spr_efRingExplosionBlur</sprite>
+    <sprite>sprites\spr_efRingExplosionBlurGradient</sprite>
     <sprite>sprites\spr_controlStyle</sprite>
+    <sprite>sprites\spr_unneccessary</sprite>
+    <sprites name="bullet_hell_mode">
+      <sprite>sprites\spr_shoot_blaster</sprite>
+      <sprite>sprites\spr_module</sprite>
+      <sprite>sprites\spr_shoot_wideblaster</sprite>
+      <sprite>sprites\spr_shoot_spiralblaster</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -239,11 +247,20 @@
       <object>objects\obj_text_settings</object>
       <object>objects\obj_bossParent</object>
     </objects>
+    <objects name="bullet_hell_mode">
+      <object>objects\obj_player_bullethell</object>
+      <object>objects\obj_shoot_blaster</object>
+      <object>objects\obj_shoot_wideblaster</object>
+      <object>objects\obj_shoot_spiralblade</object>
+      <object>objects\obj_shoot_module</object>
+    </objects>
     <object>objects\objExSmallTarget</object>
     <object>objects\objExSmall</object>
     <object>objects\objExSmallBeam</object>
     <object>objects\objExRingTest</object>
     <object>objects\objExTest</object>
+    <object>objects\objExRingTestSpecial1</object>
+    <object>objects\objExRingSpecial1</object>
     <object>objects\objExRing</object>
     <objects name="BossSub1">
       <object>objects\obj_bossGunship</object>
@@ -283,6 +300,10 @@
     <room>rooms\room14</room>
     <room>rooms\room15</room>
   </rooms>
+  <constants number="2">
+    <constant name="GM_build_date">41882.5676056366</constant>
+    <constant name="GM_version">'100'</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

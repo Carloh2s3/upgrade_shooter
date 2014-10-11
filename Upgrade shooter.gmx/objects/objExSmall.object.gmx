@@ -53,7 +53,7 @@ image_yscale = 0.5;
           <argument>
             <kind>1</kind>
             <string>speed -= 0.5;
-image_yscale += 0.1;
+image_yscale += 0.15;
 </string>
           </argument>
         </arguments>

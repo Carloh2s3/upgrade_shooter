@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>repeat(2)instance_create(x,y,objSmokeBoom);
+repeat(14)instance_create(x,y,objExSmall);
+repeat(7)instance_create(x,y,objExSmallBeam);
 instance_destroy();
 </string>
           </argument>
