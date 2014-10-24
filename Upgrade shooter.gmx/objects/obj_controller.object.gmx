@@ -192,10 +192,12 @@ if cheat = "superspeed" global.speedmode = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(font0);
+            <string>/*
+draw_set_font(font0);
 draw_set_color(c_black);
 draw_text(view_xview+200,view_yview+10,"points:");
 draw_text(view_xview+280,view_yview+10,global.money);
+*/
 if global.focus &gt; 0 and obj_player.focus = 1{
     draw_sprite(spr_focus,global.focus-1,obj_player.x,obj_player.y);
 }

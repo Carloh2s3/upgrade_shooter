@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.firerate = 0;
+            <string>///levelprogress is adjusted
+
+global.firerate = 0;
 global.cbfirerate = 100;
 global.cfirerate = global.cbfirerate;
 global.fireamount = 0;
@@ -54,7 +56,7 @@ global.bmulti = 1.5;
 global.cmultiplus = 0.1;
 
 global.money = 0;
-global.levelprogress = 0;
+global.levelprogress = 5;
 global.difficulty = 2;
 global.totalspent = 0;
 
