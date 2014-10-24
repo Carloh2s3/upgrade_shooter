@@ -110,6 +110,7 @@
     <sprite>sprites\spr_efRingExplosion</sprite>
     <sprite>sprites\spr_efRingExplosionBlur</sprite>
     <sprite>sprites\spr_controlStyle</sprite>
+    <sprite>sprites\sprite77</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="misc">
@@ -283,6 +284,10 @@
     <room>rooms\room14</room>
     <room>rooms\room15</room>
   </rooms>
+  <constants number="2">
+    <constant name="GM_build_date">0</constant>
+    <constant name="GM_version">0</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
